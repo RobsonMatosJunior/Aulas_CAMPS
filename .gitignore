@@ -1,0 +1,12 @@
+# Arquivos de compilação e execução
+*.dll
+*.pdb
+*.exe
+*.so
+*.dylib
+
+# Diretórios de saída de compilação
+bin/
+obj/
+out/
+**/obj/
