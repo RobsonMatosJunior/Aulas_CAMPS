@@ -1,16 +1,17 @@
-﻿// ## Cálculo do Perímetro de um Círculo (Usando Constantes) ##
+﻿/* 
+    Conversão de Velocidade de km/h para m/s
 
+    Objetivo: Escrever um programa que converta uma velocidade de km/h para m/s.
+*/
 using System;
 class Program
 {
-    const double PI = 3.14159;
-
     static void Main()
     {
-        Console.Write("Digite o raio do círculo: ");
-        float raio = float.Parse(Console.ReadLine());
+        Console.Write("Digite a velocidade em km/h: ");
+        float velocidadeKmh = float.Parse(Console.ReadLine());
 
-        double perimetro = 2 * PI * raio;
-        Console.WriteLine($"O perímetro do círculo é: {perimetro}");
+        float velocidadeMs = velocidadeKmh / 3.6f;
+        Console.WriteLine($"A velocidade em m/s é: {velocidadeMs}");
     }
 }

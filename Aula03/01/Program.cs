@@ -1,14 +1,21 @@
-﻿// ## Cálculo do Perímetro de um Círculo (Usando Constantes) ##
+﻿/*
+    Cálculo da Área de um Retângulo
+
+    Objetivo: Criar um programa que calcule a área de um retângulo com base na largura e altura fornecidas pelo usuário.
+*/
 
 using System;
 class Program
 {
     static void Main()
     {
-        Console.Write("Digite a velocidade em km/h: ");
-        float velocidadeKmh = float.Parse(Console.ReadLine());
+        Console.Write("Digite a largura do retângulo: ");
+        float largura = float.Parse(Console.ReadLine());
 
-        float velocidadeMs = velocidadeKmh / 3.6f;
-        Console.WriteLine($"A velocidade em m/s é: {velocidadeMs}");
+        Console.Write("Digite a altura do retângulo: ");
+        float altura = float.Parse(Console.ReadLine());
+
+        float area = largura * altura;
+        Console.WriteLine($"A área do retângulo é: {area}");
     }
 }
