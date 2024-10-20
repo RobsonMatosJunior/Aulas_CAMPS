@@ -1,21 +1,17 @@
-﻿// ## Aprovação de Aluno: Determine se um aluno foi aprovado ou reprovado com base em uma nota.
+﻿/* 
+    Conversão de Velocidade de km/h para m/s
 
+    Objetivo: Escrever um programa que converta uma velocidade de km/h para m/s.
+*/
 using System;
-
 class Program
 {
     static void Main()
     {
-        Console.Write("Digite a nota do aluno: ");
-        float nota = float.Parse(Console.ReadLine());
+        Console.Write("Digite a velocidade em km/h: ");
+        float velocidadeKmh = float.Parse(Console.ReadLine());
 
-        if (nota >= 6)
-        {
-            Console.WriteLine("Aluno aprovado.");
-        }
-        else
-        {
-            Console.WriteLine("Aluno reprovado.");
-        }
+        float velocidadeMs = velocidadeKmh / 3.6f;
+        Console.WriteLine($"A velocidade em m/s é: {velocidadeMs}");
     }
 }

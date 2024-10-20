@@ -1,17 +1,20 @@
-﻿// ## Números Pares: Crie um programa que imprima os números pares de 1 a 20.
+﻿/* 
+    Cálculo do Perímetro de um Círculo (Usando Constantes)
+
+    Objetivo: Criar um programa que calcule o perímetro de um círculo, utilizando a constante PI.
+*/ 
 
 using System;
-
 class Program
 {
+    const double PI = 3.14159;
+
     static void Main()
     {
-        for (int i = 1; i <= 20; i++)
-        {
-            if (i % 2 == 0)
-            {
-                Console.WriteLine(i);
-            }
-        }
+        Console.Write("Digite o raio do círculo: ");
+        float raio = float.Parse(Console.ReadLine());
+
+        double perimetro = 2 * PI * raio;
+        Console.WriteLine($"O perímetro do círculo é: {perimetro}");
     }
 }

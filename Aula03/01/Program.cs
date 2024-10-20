@@ -1,21 +1,24 @@
-﻿/*
-    Cálculo da Área de um Retângulo
-
-    Objetivo: Criar um programa que calcule a área de um retângulo com base na largura e altura fornecidas pelo usuário.
-*/
+﻿// ## Algoritmo para Calcular a Média de Três Notas ##
 
 using System;
 class Program
 {
     static void Main()
     {
-        Console.Write("Digite a largura do retângulo: ");
-        float largura = float.Parse(Console.ReadLine());
+        // Solicitar ao usuário as notas
+        Console.WriteLine("Digite a primeira nota: ");
+        double nota1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("Digite a altura do retângulo: ");
-        float altura = float.Parse(Console.ReadLine());
+        Console.WriteLine("Digite a segunda nota: ");
+        double nota2 = Convert.ToDouble(Console.ReadLine());
 
-        float area = largura * altura;
-        Console.WriteLine($"A área do retângulo é: {area}");
+        Console.WriteLine("Digite a terceira nota: ");
+        double nota3 = Convert.ToDouble(Console.ReadLine());
+
+        // Calcular a média
+        double media = (nota1 + nota2 + nota3) / 3;
+
+        // Exibir a média
+        Console.WriteLine($"A média das notas é: {media}");
     }
 }
