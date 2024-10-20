@@ -3,8 +3,6 @@
 ## Descrição do Projeto
 Este projeto tem como objetivo ensinar jovens os conceitos fundamentais de lógica de programação e algoritmos. Ao longo do curso, os participantes aprenderão desde conceitos básicos, como variáveis e controle condicional, até tópicos mais avançados, como estruturas de dados e programação orientada a objetos (OOP).
 
-## Cronograma das Aulas
-
 ## Ferramentas e Tecnologias
 - Linguagem de programação: C#.  
 - Ambiente de desenvolvimento: Visual Studio Code ou outro editor de texto.  
