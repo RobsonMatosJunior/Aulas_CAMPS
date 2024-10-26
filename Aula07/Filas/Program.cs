@@ -10,25 +10,29 @@ class Fila
     // Declara e inicializa uma fila de strings.
 
     // Método para adicionar um elemento ao final da fila
-    public void Adicionar(string elemento) {
+    public void Adicionar(string elemento) 
+    {
         fila.Enqueue(elemento); 
         // Utiliza a operação Enqueue para adicionar o elemento à fila.
     }
 
     // Método para remover e retornar o elemento do início da fila
-    public string Remover() {
+    public string Remover() 
+    {
         return fila.Dequeue();
         // Utiliza a operação Dequeue para remover e retornar o elemento do início da fila.
     }
 
     // Método para retornar o elemento do início sem removê-lo
-    public string Frente() {
+    public string Frente() 
+    {
         return fila.Peek();
         // Utiliza a operação Peek para retornar o elemento do início sem removê-lo.
     }
 
     // Método para verificar se a fila está vazia
-    public bool Vazia() {
+    public bool Vazia() 
+    {
         return fila.Count == 0;
         // Retorna true se a contagem de elementos na fila for zero, indicando que está vazia.
     }

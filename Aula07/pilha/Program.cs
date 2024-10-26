@@ -9,37 +9,44 @@ class Pilha {
     private Stack<string> pilha = new Stack<string>();
 
     // Adiciona um elemento ao topo da pilha
-    public void Adicionar(string elemento) {
+    public void Adicionar(string elemento) 
+    {
         pilha.Push(elemento);
     }
 
     // Remove e retorna o elemento do topo da pilha
-    public string Remover() {
+    public string Remover() 
+    {
         return pilha.Pop();
     }
 
     // Retorna o elemento do topo sem removê-lo
-    public string Topo() {
+    public string Topo() 
+    {
         return pilha.Peek();
     }
 
     // Verifica se a pilha está vazia
-    public bool Vazia() {
+    public bool Vazia() 
+    {
         return pilha.Count == 0;
     }
 
     // Remove todos os elementos da pilha
-    public void Limpar() {
+    public void Limpar() 
+    {
         pilha.Clear();
     }
 
     // Retorna o número de elementos na pilha
-    public int Contar() {
+    public int Contar() 
+    {
         return pilha.Count;
     }
 
     // Converte a pilha em um array
-    public string[] ParaArray() {
+    public string[] ParaArray() 
+    {
         return pilha.ToArray();
     }
 }

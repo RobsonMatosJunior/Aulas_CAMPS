@@ -7,7 +7,8 @@ using System.Collections.Generic;
 class Program { 
 // Define a classe Program, que contém o método Main e representa a estrutura do programa.
 
-    static void Main() { 
+    static void Main() 
+    { 
     // Método Main, que é o ponto de entrada do programa onde a execução começa.
 
         Queue<string> fila = new Queue<string>(); 
