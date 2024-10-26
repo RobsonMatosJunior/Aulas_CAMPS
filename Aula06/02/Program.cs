@@ -44,8 +44,10 @@ class Program
         }
     }
 
-    static void Main() { 
-        // Método Main, que é o ponto de entrada do programa onde a execução começa.
+    static void Main()
+    // Método Main, que é o ponto de entrada do programa onde a execução começa.
+
+    { 
 
         List<string> tarefas = new List<string>(); 
         // Cria uma nova instância da classe List para armazenar as tarefas como strings.
