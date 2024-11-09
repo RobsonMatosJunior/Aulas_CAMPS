@@ -14,7 +14,7 @@ public class Cachorro : Animal
 {
     public override void EmitirSom() 
     {
-        Console.WriteLine("Cachorro: Corinthians serie B");
+        Console.WriteLine("Cachorro: AU AU, Corinthians vai cair ");
         // Sobrescreve o método para exibir o som de um cachorro
     }
 }
@@ -24,7 +24,7 @@ public class Gato : Animal
 {
     public override void EmitirSom() 
     {
-        Console.WriteLine("Gato: e a copa do brasil joao?");
+        Console.WriteLine("Gato: Miau, e a copa do brasil?");
         // Sobrescreve o método para exibir o som de um gato
     }
 }
