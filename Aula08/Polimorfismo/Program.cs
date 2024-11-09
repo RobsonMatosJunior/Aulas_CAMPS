@@ -1,7 +1,8 @@
 ﻿public class Animal
 // Método virtual que pode ser sobrescrito em classes derivadas
 {
-    public virtual void EmitirSom() {
+    public virtual void EmitirSom() 
+    {
         Console.WriteLine("O animal faz um som."); 
         // Exibe uma mensagem padrão se o método não for sobrescrito
     }
@@ -13,7 +14,7 @@ public class Cachorro : Animal
 {
     public override void EmitirSom() 
     {
-        Console.WriteLine("Au Au");
+        Console.WriteLine("Cachorro: Corinthians serie B");
         // Sobrescreve o método para exibir o som de um cachorro
     }
 }
@@ -23,22 +24,28 @@ public class Gato : Animal
 {
     public override void EmitirSom() 
     {
-        Console.WriteLine("Miau");
+        Console.WriteLine("Gato: e a copa do brasil joao?");
         // Sobrescreve o método para exibir o som de um gato
     }
 }
 
-// Instanciando um Cachorro como Animal
+class Program{
+    static void Main(){
+    // Instanciando um Cachorro como Animal
+    Animal meuCachorro = new Cachorro();
+    // Instanciando um Cachorro como Animal. Isso é possível por polimorfismo.
 
-Animal meuCachorro = new Cachorro();
-// Instanciando um Cachorro como Animal. Isso é possível por polimorfismo.
+    Animal meuGato = new Gato();
+    // Instanciando um Gato como Animal. Isso também é possível por polimorfismo.
 
-Animal meuGato = new Gato();
-// Instanciando um Gato como Animal. Isso também é possível por polimorfismo.
+    // Aqui, o método EmitirSom será chamado para cada tipo de animal, mas o comportamento variará de acordo com a classe.
+    meuCachorro.EmitirSom();
+    // Saída: Au Au. O comportamento de EmitirSom é sobrescrito pela classe Cachorro
 
-// Aqui, o método EmitirSom será chamado para cada tipo de animal, mas o comportamento variará de acordo com a classe.
-meuCachorro.EmitirSom();
-// Saída: Au Au. O comportamento de EmitirSom é sobrescrito pela classe Cachorro
+    meuGato.EmitirSom();
+    // Saída: Miau. O comportamento de EmitirSom é sobrescrito pela classe Gato
+    }
+    
+}
 
-meuGato.EmitirSom();
-// Saída: Miau. O comportamento de EmitirSom é sobrescrito pela classe Gato
+
