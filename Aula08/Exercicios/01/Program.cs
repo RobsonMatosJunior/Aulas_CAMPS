@@ -13,11 +13,16 @@
         Console.WriteLine($"Nome: {Nome}, Idade: {Idade}"); // Exibe os valores das propriedades Nome e Idade
     }
 }
+public class Program
+{
+    public static void Main()
+    {
+        // Instancia um novo objeto da classe Pessoa e define os valores para Nome e Idade
+        Pessoa pessoa = new Pessoa { Nome = "João", Idade = 30 };
 
-// Instancia um novo objeto da classe Pessoa e define os valores para Nome e Idade
-Pessoa pessoa = new Pessoa { Nome = "João", Idade = 30 };
+        // Chama o método ExibirInformacoes do objeto 'pessoa', que exibe os valores de Nome e Idade
 
-// Chama o método ExibirInformacoes do objeto 'pessoa', que exibe os valores de Nome e Idade
-
-pessoa.ExibirInformacoes();
-// Exibe: Nome: João, Idade: 30
+        pessoa.ExibirInformacoes();
+        // Exibe: Nome: João, Idade: 30
+    }
+}
