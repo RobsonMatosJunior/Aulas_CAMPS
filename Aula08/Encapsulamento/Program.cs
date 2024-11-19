@@ -29,15 +29,22 @@
     }
 }
 
-// Uso da classe ContaBancaria
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+        // Uso da classe ContaBancaria
 
-ContaBancaria conta = new ContaBancaria();
-// Cria uma nova instância (ou seja, um novo objeto) da classe ContaBancaria, chamada "conta".
+        ContaBancaria conta = new ContaBancaria();
+        // Cria uma nova instância (ou seja, um novo objeto) da classe ContaBancaria, chamada "conta".
 
-conta.Depositar(100.00m);
-// Chama o método Depositar para adicionar 100 à conta.
-// O "m" após o número indica que é um valor do tipo decimal.
+        conta.Depositar(100.00m);
+        // Chama o método Depositar para adicionar 100 à conta.
+        // O "m" após o número indica que é um valor do tipo decimal.
 
-conta.ExibirSaldo();
-// Chama o método ExibirSaldo para mostrar o saldo atual na tela.
-// Este método acessa o saldo indiretamente e exibe: "Saldo atual: $100.00".
+        conta.ExibirSaldo();
+        // Chama o método ExibirSaldo para mostrar o saldo atual na tela.
+        // Este método acessa o saldo indiretamente e exibe: "Saldo atual: $100.00".
+    }
+}

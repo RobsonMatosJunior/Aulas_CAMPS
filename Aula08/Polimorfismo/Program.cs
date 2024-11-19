@@ -28,17 +28,24 @@ public class Gato : Animal
     }
 }
 
-// Instanciando um Cachorro como Animal
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Instanciando um Cachorro como Animal
 
-Animal meuCachorro = new Cachorro();
-// Instanciando um Cachorro como Animal. Isso é possível por polimorfismo.
+        Animal meuCachorro = new Cachorro();
+        // Instanciando um Cachorro como Animal. Isso é possível por polimorfismo.
 
-Animal meuGato = new Gato();
-// Instanciando um Gato como Animal. Isso também é possível por polimorfismo.
+        Animal meuGato = new Gato();
+        // Instanciando um Gato como Animal. Isso também é possível por polimorfismo.
 
-// Aqui, o método EmitirSom será chamado para cada tipo de animal, mas o comportamento variará de acordo com a classe.
-meuCachorro.EmitirSom();
-// Saída: Au Au. O comportamento de EmitirSom é sobrescrito pela classe Cachorro
+        // Aqui, o método EmitirSom será chamado para cada tipo de animal, mas o comportamento variará de acordo com a classe.
+        meuCachorro.EmitirSom();
+        // Saída: Au Au. O comportamento de EmitirSom é sobrescrito pela classe Cachorro
 
-meuGato.EmitirSom();
-// Saída: Miau. O comportamento de EmitirSom é sobrescrito pela classe Gato
+        meuGato.EmitirSom();
+        // Saída: Miau. O comportamento de EmitirSom é sobrescrito pela classe Gato
+
+    }
+}
