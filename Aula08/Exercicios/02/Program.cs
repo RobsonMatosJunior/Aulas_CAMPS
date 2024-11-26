@@ -30,28 +30,34 @@ public class Gato : Animal
     }
 }
 
-// Instanciando um objeto da classe Cachorro e atribuindo o nome "Max"
-Cachorro cachorro = new Cachorro { Nome = "Max" };
+public class program
+{
+    public static void Main(string[] args)
+    {
+        // Instanciando um objeto da classe Cachorro e atribuindo o nome "Max"
+        Cachorro cachorro = new Cachorro { Nome = "Max" };
 
-// Chamando o método EmitirSom da classe Animal (herdado por Cachorro)
-// Isso exibe "Som de animal", pois o método é herdado da classe base
-cachorro.EmitirSom();  
-// Saída: Som de animal
+        // Chamando o método EmitirSom da classe Animal (herdado por Cachorro)
+        // Isso exibe "Som de animal", pois o método é herdado da classe base
+        cachorro.EmitirSom();  
+        // Saída: Som de animal
 
-// Chamando o método Latir, que é específico da classe Cachorro
-// Isso exibe "Au Au" no console
-cachorro.Latir();
-// Saída: Au Au
+        // Chamando o método Latir, que é específico da classe Cachorro
+        // Isso exibe "Au Au" no console
+        cachorro.Latir();
+        // Saída: Au Au
 
-// Instanciando um objeto da classe Gato e atribuindo o nome "Luna"
-Gato gato = new Gato { Nome = "Luna" };
+        // Instanciando um objeto da classe Gato e atribuindo o nome "Luna"
+        Gato gato = new Gato { Nome = "Luna" };
 
-// Chamando o método EmitirSom da classe Animal (herdado por Gato)
-// Isso exibe "Som de animal", pois o método é herdado da classe base
-gato.EmitirSom();
-// Saída: Som de animal
+        // Chamando o método EmitirSom da classe Animal (herdado por Gato)
+        // Isso exibe "Som de animal", pois o método é herdado da classe base
+        gato.EmitirSom();
+        // Saída: Som de animal
 
-// Chamando o método Miar, que é específico da classe Gato
-// Isso exibe "Miau" no console
-gato.Miar();
-// Saída: Miau
+        // Chamando o método Miar, que é específico da classe Gato
+        // Isso exibe "Miau" no console
+        gato.Miar();
+        // Saída: Miau
+    }
+}
