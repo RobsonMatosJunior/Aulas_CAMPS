@@ -18,3 +18,20 @@ class Exercicio1
         }
     }
 }
+
+/*
+
+Navegar no repositório:
+Limpar o terminal = "cls"
+Acessar uma pasta = "cd nomeDaPasta"
+volta para a pasta anterior =  "cd.."
+criar uma nova pasta = " mkdir nomeDaPasta"
+
+---------------------------------------------
+
+biuildar o que foi desenvolvido = "
+
+
+
+
+*/
