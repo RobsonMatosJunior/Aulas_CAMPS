@@ -4,6 +4,7 @@
 *.exe
 *.so
 *.dylib
+*.sln
 
 # Diretórios de saída de compilação
 bin/
